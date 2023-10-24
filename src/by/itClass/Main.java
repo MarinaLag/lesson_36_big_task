@@ -2,7 +2,8 @@ package by.itClass;
 
 import by.itClass.model.Cat;
 import by.itClass.model.Dog;
-import by.itClass.utils.CompetitionUtils;
+
+import static by.itClass.utils.CompetitionUtils.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,6 +16,21 @@ public class Main {
         List<Dog> dogs = new ArrayList<>();
         Map<String, String> errors = new HashMap<>();
 
-        CompetitionUtils.parseFile(cats, dogs, errors);
+        parseFile(cats, dogs, errors);
+
+        // CompetitionUtils.printResult(cats, dogs, errors);
+
+        // List<Cat> sortedCat = sortByBirthDate(cats); ПРАВИЛЬНО!!!!!!!т.к. вызываем дважды
+        // List<Dog> sortedDog = sortByBirthDate(dogs); ПРАВИЛЬНО!!!!!!!т.к. вызываем дважды
+
+        // CompetitionUtils.printResult(sortedCat, sortedDog, errors);
+
+        List<Cat> youngSortedCats = filterAnimals(sortByBirthDate(cats), true);
+        List<Cat> oldSortedCats = filterAnimals(sortByBirthDate(cats), false);
+        List<Dog> youngSortedDogs = filterAnimals(sortByBirthDate(dogs), true);
+        List<Dog> oldSortedDogs = filterAnimals(sortByBirthDate(dogs), false);
+
+        printResult(youngSortedCats, youngSortedDogs, oldSortedCats, oldSortedDogs, errors);
+
     }
 }

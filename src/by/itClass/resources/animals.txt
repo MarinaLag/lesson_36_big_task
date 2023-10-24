@@ -1,6 +1,6 @@
-112098100000001;cat;Prince of Persia;02-03-2022,Persian Cat,prince^persia@yandex.ru
-112095600000002;dog;Princess;12-05-2021,Cardigan Welsh Corgi,pr|nce$$@gmail.com
-112098100000010;cat;Quinn;24-01-2022,Scottish Fold Cat,quinn2liz@yandex.ru
+1120981000000012;cat;Prince of Persia;02-03-2022,Persian Cat,prince^persia@yandex.ru
+112095600000002;dog;Tom;12-05-2021,,pr|nce$$@gmail.com
+112098100000010;cat;;24-01-2022,Scottish Fold Cat,quinn2liz@yandex.ru
 112095600000020;dog;Conan the Barbarian;15-11-2019,Alaskan Malamute,black.arny@mail.ru
 112098100000100;cat;Beauty;21-01-2021,Russian Blue Cat,russian-beauty@mail.ru
 112095600000200;dog;Hooligan;22-03-2017,Toy Fox Terrier,hooliyougan@yandex.ru

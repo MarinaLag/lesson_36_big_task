@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 
 public class AnimalFactory {
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MM-y");
-    private static final String EMAIL_REGEX = "[\\w!#$%&*+/=?^'`{|}~\\-]+(?:\\.[\\w!#$%&*+/=?^'`{|}~\\-]+)*@(?:[a-zA-Z\\d](?:[a-zA-Z\\d\\-]*[a-zA-Z\\d])?\\.)+[a-zA-Z\\d][a-zA-Z\\d\\-]*[a-zA-Z\\d]";
+    protected static final String EMAIL_REGEX = "[\\w!#$%&*+/=?^'`{|}~\\-]+(?:\\.[\\w!#$%&*+/=?^'`{|}~\\-]+)*@(?:[a-zA-Z\\d](?:[a-zA-Z\\d\\-]*[a-zA-Z\\d])?\\.)+[a-zA-Z\\d][a-zA-Z\\d\\-]*[a-zA-Z\\d]";
 
     public static Animal getInstance(String line) throws CompetitionException {
         String[] stringsArray = line.split("[;,]");
